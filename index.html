@@ -71,7 +71,7 @@ footer{background:#E6E6FA;color:#4B0082;padding:10px;text-align:center;font-weig
 // ---------------- JS ----------------
 
 // ---------- Minimal entries ----------
-let images = ["1.png","2.ppng","3.png","4.png","5.png"]; // Add all image filenames here
+let images = ["1.png","2.png","3.png","4.png","5.png"]; // Add all image filenames here
 let answerKey = images.map(_ => " ");     // Placeholder answers automatically created
 
 let examData = { files: images.map(img => ({section:"",data:img})) };
@@ -113,7 +113,7 @@ document.getElementById('stuStartBtn').onclick=()=>{
     review:Array(examData.files.length).fill(false),
     currentIndex:0,
     student:{name,sec,roll,adm,date:new Date().toLocaleDateString()},
-    timeLeftSec:(10)*60
+    timeLeftSec:(1)*60
   };
   document.getElementById('studentEntry').style.display='none';
   document.getElementById('examArea').style.display='block';
